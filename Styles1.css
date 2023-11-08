@@ -1,0 +1,240 @@
+ol.characteristics.hidden {
+  display: none;
+}
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 100;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff");
+}
+
+body, ol, ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  background: url('img/Imagen-1.jfif') center/cover no-repeat fixed;
+  font-family: "San Francisco";
+}
+
+body::before {
+  content: "";
+  background-color: rgba(255, 255, 255, 0.2);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.7);
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+header a i {
+  color: black;
+  font-size: 3em;
+}
+
+header nav ul {
+  display: flex;
+  gap: 1.1em;
+}
+
+header nav ul li {
+  color: black;
+  padding-right: 10px;
+}
+
+.container {
+  min-height: 100vh;
+  position: relative;
+}
+
+main {
+  min-height: calc(100vh - 100px); /* Resta el alto del header al 100vh */
+  margin-bottom: 100px;
+}
+
+footer {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.7);
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  color: black;
+  position: relative; /* Cambia 'absolute' a 'relative' */
+  width: 100%;
+  border-radius: 3px;
+}
+
+
+footer nav ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: justify;
+  gap: 1.1rem;
+}
+
+.seccion-1 {
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-start;
+  padding: 2em;
+  text-size-adjust: 1890px;
+}
+.seccion-1p2 {
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-start;
+  padding: 2em;
+}
+.seccion-2 {
+  width: 100%;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 1;
+  margin: 10px;
+}
+
+.Trabajos, .secciones-trabajos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+h3 {
+  color: black;
+  font-weight: bold;
+  margin: 1em 0;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+  font-size: 1px;
+}
+.contact-links img {
+  width: 24px; 
+  height: 24px; 
+}
+
+.whatsApplogo {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin: 1em 10px;
+}
+
+.checkbtn {
+  font-size: 25px;
+  color: black;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+.img-logo, .imagenportada {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+}
+main {
+  flex: 1; /* Permite que main se expanda para llenar el espacio restante */
+  padding-bottom: 100px; /* Añade espacio al final para evitar que el footer cubra el contenido */
+}
+@media (max-width: 768px) {
+  .checkbtn, .img-logo, .imagenportada {
+    display: block;
+  }
+  .checkbtn i {
+    display: none;
+  }
+  .checkbtn::before {
+    content: "\2630"; /* Utiliza el símbolo de hamburguesa en lugar del icono */
+    font-size: 25px;
+    color: black;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: block;
+  }
+  header {
+    background-color: #f2f2f2;
+  }
+
+  .acerca-de {
+    text-align: center;
+  }
+
+  .acerca-imagen {
+    margin-bottom: 40px;
+  }
+
+  .checkbtn {
+    display: block;
+  }
+  header nav ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    text-align: center;
+    top: 80px;
+    left: -100%; /* Cambia "left: 100%;" a "left: -100%;" para ocultar inicialmente el menú */
+    transition: all 0.5s;
+  }
+
+  #encabezado ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    text-align: center;
+    top: 80px;
+    left: 100%;
+    transition: all 0.5s;
+  }
+
+  #check:checked + .checkbtn + header nav ul {
+    left: 0;
+  }
+
+  #encabezado ul li {
+    padding: 15px;
+  }
+}

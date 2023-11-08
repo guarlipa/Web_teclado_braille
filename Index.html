@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primera web</title>
+    <link rel="stylesheet" href="Styles1.css">
+    <link rel="stylesheet prefetch" href="https://gist.githubusercontent.com/mfd/614e2e80a22b878bde63cb471cbe677e/raw/eef2aabfd0d588d43285431186a0cf70305ceb80/sanfrancisco-font.css">
+    <script src="https://kit.fontawesome.com/3b4a5bb8ed.js" crossorigin="anonymous"></script>
+    <script>
+        document.querySelector(".checkbtn").addEventListener("click", function () {
+          document.querySelector("#check").checked = !document.querySelector("#check").checked;
+        });
+        
+      </script>
+    
+    
+</head>
+<body>
+    
+    <div class="container">
+        <header id="encabezado">
+            <img src="img/nis.jfif" alt="logo" class="img-logo">
+            <nav>
+                <input type="checkbox" id="check" />
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <ul>
+                    <li>Inicio</li>
+                    <li>Sobre la empresa</li>
+                    <li>Catálogo</li>
+                    <li>Servicios</li>
+                    <li>Contacto</li>
+                </ul>
+            </nav>
+        </header>
+
+        <main id="Seccion-principal">
+            <section class="seccion-1">
+                <h1>Sobre la empresa</h1>
+                <p>Nuestra empresa se dedica a crear prototipos útiles que responden a las necesidades específicas de cada persona, ofreciendo soluciones personalizadas, accesibles y eficientes.</p>
+                <img src="img/Imagen-1.jfif" alt="imagenportada" style="width: 128px; height: 128px;">
+            </section>
+            <section class="seccion-1p2">
+                <h1>Equipo de trabajo</h1>
+                <p>Somos un equipo de tres estudiantes apasionados por la innovación social y la inclusión laboral. Nuestra empresa se dedica a ayudar a las personas con discapacidad creando prototipos útiles que les faciliten su vida cotidiana y su integración en el mercado de trabajo.</p>
+                <img src="img/equipodetrabajoej.jfif" alt="imagenportada" style="width: 128px; height: 128px;">
+            </section>
+            <section class="seccion-2">
+                
+            </section>
+            <h1>Productos y servicios</h1>
+            <div class="secciones-trabajos">
+                <div class="row">
+                    <div class="column">
+                        <section class="seccion-3">
+                            <h1>Teclado braille</h1>
+                            <p>Este es el ultimo teclado braille, creación basada en el abecedario braille, permite que las personas con discapacidad visual se puedan comunicar.</p>
+                            <p class="more-info-button">Mas informacion</p>
+                            <ol class="hidden characteristics">
+                                <li>Características:</li>
+                                <li>- Funda compatible con la gran mayoría de dispositivos móviles</li>
+                                <li>- Teclado con conectividad Bluetooth</li>
+                                <li>- Tamaño compacto</li>
+                                <li>- Compatible con sistemas Android, iOS, Mac OS y Windows</li>
+                            </ol>
+                            <img src="img/f4.jfif" alt="imagen2" style="max-width: 50%; height: auto;">
+                        </section>
+                    </div>
+                    <div class="column">
+                        <section class="seccion-4">
+                            <h1>Curso basico de aprendizaje braille</h1>
+                            <p>En este curso aprenderas todo acerca del lenguaje braille, muy útil para quienes quieren aprender a comunicarse con este método o ayudar a otros a hacerlo.</p>
+                            <p class="more-info-button">Mas informacion</p>
+                            <ol class="hidden characteristics">
+                                    <li>El curso incluye:</li>
+                                    <li>-La historia y los principios del lenguaje braille</li>
+                                    <li>-Los símbolos y las reglas del alfabeto braille</li>
+                                    <li>-Los diferentes tipos de braille, como el braille español, el braille internacional o el braille matemático</li>
+                                    <li>-Los materiales y las herramientas para escribir y leer en braille, como el punzón, la regleta, el papel o el lector electrónico</li>
+                                    <li>-Los beneficios y los desafíos de usar el lenguaje braille en la educación, el trabajo y la vida cotidiana</li>
+                                </ol>
+                            <img src="img/brailleclases.jfif" alt="imagen 3" style="max-width: 50%; height: auto;">
+                        </section>
+                    </div>
+                    <div class="column">
+                        <section class="seccion-5">
+                            <h1>Servicio de mantenimiento</h1>
+                            <p>Tenemos servico tecnico 24/7</p>
+                            <p class="more-info-button">Mas informacion</p>
+                            <ol class="hidden characteristics">
+                                    <li>En este servicio ofrcemos:</li>
+                                    <li>-Oferta 50% de descuento en tu primer diasnostico inicial</li>
+                                    <li>-Plan de mantenimiento preventivo, que establezca las acciones, los tiempos y los recursos necesarios para realizar revisiones periódicas, limpiezas, ajustes, calibraciones, actualizaciones y sustituciones de piezas o equipos que garanticen el óptimo rendimiento y la prevención de averías</li>
+                                    <li>-Plan de mantenimiento correctivo, que defina los procedimientos, los protocolos y los medios para atender y resolver las incidencias, los problemas o las emergencias que se presenten en los dispositivos tecnológicos, ya sea de forma remota o presencial, con el menor impacto posible en la operación y la calidad del servicio.</li>
+                                    <li>-Sistema de gestión de mantenimiento, que permita registrar, monitorear, evaluar y mejorar las actividades de mantenimiento, así como generar informes, estadísticas y alertas que faciliten la toma de decisiones y la optimización de los recursos.</li>
+                                    <li>-equipo humano capacitado, profesional y comprometido, que cuente con las competencias, las herramientas y los equipos necesarios para realizar las tareas de mantenimiento de forma eficiente, segura y responsable.</li>
+                                    <li>-servicio de atención al cliente, que brinde asesoría, soporte técnico y soluciones rápidas y efectivas a las consultas, las solicitudes o las reclamaciones de los usuarios de los dispositivos tecnológicos.</li>
+                                </ol>
+                            <img src="img/mantenimiento.png" alt="imagen portada 1" style="max-width: 50%; height: auto;">
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div id="footer">
+                <a href="https://wa.me/+573204739388">
+                    <img class="whatsApplogo" src="img/whatsApplogo.png" alt="WhatsApp Business">
+                </a>
+                <h3>Suiguenos en nuestras redes sociales:</h3>
+                <nav>
+                    <ul class="contact-links">
+                        <li><a href="https://www.instagram.com/keyboard_braille2/" target="_blank"><img src="img/Instagram-logo.png" alt="Instagram"></a></li>
+                        <li><a href="https://www.facebook.com/tucuenta" target="_blank"><img src="img/Facebook-logo.png" alt="Facebook"></a></li>
+                        <li><a href="https://www.linkedin.com/in/tucuenta" target="_blank"><img src="img/linkedin-logo.png" alt="LinkedIn"></a></li>
+                        <li><a href="https://www.youtube.com/tucanal" target="_blank"><img src="img/youtube-logo.png" alt="YouTube"></a></li>
+                        <li><a href="mailto:tuemail@gmail.com"><img src="img/gmail-logo.png" alt="Gmail"></a></li>
+                        <li><a href="https://www.tiktok.com/@tucuenta" target="_blank"><img src="img/tiktok-logo.png" alt="TikTok"></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+    </div>
+    <script>
+        // Selecciona todos los botones "Mas informacion"
+        const moreInfoButtons = document.querySelectorAll('.more-info-button');
+      
+        // Agrega un evento de clic a cada botón "Mas informacion"
+        moreInfoButtons.forEach((button) => {
+          button.addEventListener('click', () => {
+            // Encuentra el elemento hermano (lista de características) del botón
+            const characteristics = button.nextElementSibling;
+      
+            // Alterna la visibilidad de las características
+            characteristics.classList.toggle('hidden');
+          });
+        });
+      </script>
+      
+</body>
+</html>
